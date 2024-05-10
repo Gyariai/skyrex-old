@@ -1,0 +1,39 @@
+.block {
+    display: block;
+    animation: ani 0.5s forwards;
+}
+
+.animate_close {
+    display: block;
+    animation: ani_close 0.5s forwards;
+}
+
+.none {
+    display: none;
+}
+
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes ani_close {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.rotation {
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
